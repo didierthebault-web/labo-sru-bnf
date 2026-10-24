@@ -6,7 +6,7 @@ Ouvrir **labo-sru-bnf.html** dans un navigateur moderne. Le fichier contient l�
 
 1. Choisir un contexte, un critère et une valeur (par exemple Auteur / tous les mots / Victor Hugo).
 2. Vérifier le CQL, son explication et l’URL, puis sélectionner **Tester la requête**.
-3. Parcourir les résultats, ouvrir une notice et ses vues lisible, UNIMARC, XML et Radial.
+3. Parcourir les résultats, ouvrir une notice et ses vues lisible, UNIMARC, XML et Radial. Dans le radial, le panneau affiche les valeurs complètes dès la sélection d’un bloc ou d’un champ (par exemple `200$a` pour le titre), en séparant les occurrences. Les boutons de sous-champs présentent un aperçu ; leur sélection affiche la valeur intégrale.
 4. Dans le radial, sélectionner un bloc, un champ, une occurrence puis un sous-champ. La valeur complète apparaît à droite. Les boutons sous le dessin offrent la même navigation au clavier.
 5. Le mode CQL permet une saisie directe. Les exemples et rebonds préparent une recherche sans l’exécuter. Le bouton Relancer de l’historique exécute explicitement la requête sauvegardée.
 
