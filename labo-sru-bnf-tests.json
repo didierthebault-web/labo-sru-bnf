@@ -1,0 +1,741 @@
+{
+  "date": "2026-10-24",
+  "browser": "151.0.7922.34",
+  "checks": [
+    "Constructeur, CQL, explication, URL",
+    "Appel réel auteur, total distinct de la page",
+    "Inspecteur lisible, UNIMARC, XML, radial jusqu’à la valeur",
+    "Pagination réelle page 2",
+    "20 appels de contrôle BnF dont six tris, cinq schémas, diagnostic et zéro résultat",
+    "Autorité affichée, Dublin Core exclu",
+    "Formatage respecte les booléens dans les valeurs",
+    "Validation : vide, parenthèses, contextes, date, opérateur incomplet",
+    "Changement de contexte soumis à confirmation, annulation conserve les critères",
+    "Responsive 390, 768, 1440 px sans débordement",
+    "Onglets accessibles au clavier",
+    "Robustesse : namespaces, champs et sous-champs répétés, absences, XML invalide, caractères spéciaux, injection",
+    "Erreur locale lisible avant envoi",
+    "Diagnostic serveur affiché avec XML brut",
+    "Aucune exception JavaScript"
+  ],
+  "api": [
+    {
+      "label": "libre",
+      "query": "bib.anywhere all \"julien gracq\"",
+      "schema": "unimarcXchange",
+      "http": 200,
+      "total": 435,
+      "records": 10,
+      "diagnostics": [],
+      "first": {
+        "title": "[Julien Gracq]",
+        "authors": [
+          "Patten Arturo 1939-1999"
+        ],
+        "publication": [
+          "[Paris] [Arturo Patten] 1990"
+        ],
+        "dates": [
+          "1990"
+        ],
+        "identifiers": [],
+        "subjects": [],
+        "abstract": [],
+        "physical": [
+          "7 photogr. pos.  n. et b.  18 x 24 cm"
+        ],
+        "type": "bibliographic",
+        "ark": "ark:/12148/cb38493463r",
+        "links": [
+          "http://gallica.bnf.fr/ark:/12148/btv1b600028d"
+        ],
+        "responsibility": [
+          "Arturo Patten"
+        ]
+      },
+      "repeat606": false
+    },
+    {
+      "label": "auteur titre",
+      "query": "(bib.author all \"romain gary\") and (bib.title all \"la promesse de l'aube\")",
+      "schema": "unimarcXchange",
+      "http": 200,
+      "total": 21,
+      "records": 10,
+      "diagnostics": [
+        {
+          "uri": "info:srw/diagnostic/1/131",
+          "message": "erreur de traitement",
+          "details": "-20;"
+        }
+      ],
+      "first": {
+        "title": "La promesse de l'aube",
+        "authors": [
+          "Gary Romain 1914-1980",
+          "Sfar Joann 1971-...."
+        ],
+        "publication": [
+          "[Paris] Futuropolis-Gallimard impr. 2014"
+        ],
+        "dates": [
+          "impr. 2014"
+        ],
+        "identifiers": [
+          "978-2-7548-1022-7"
+        ],
+        "subjects": [
+          "Gary Romain 1914-1980",
+          "Autobiographie"
+        ],
+        "abstract": [
+          "Adaptation du roman autobiographique de Romain Gary, qui met en lumière les rapports intenses entre un fils et sa mère. Cette dernière porte tous ses espoirs et son ambition sur son enfant, qu'elle élève seule et aime d'un amour inconditionnel. A lui de devenir célèbre, de ne pas démériter et de porter le fardeau d'un amour maternel oppressant."
+        ],
+        "physical": [
+          "1 volume 524 p 28 cm"
+        ],
+        "type": "bibliographic",
+        "ark": "ark:/12148/cb43799037g",
+        "links": [],
+        "responsibility": [
+          "Romain Gary [illustré par Joann Sfar]"
+        ]
+      },
+      "repeat606": false
+    },
+    {
+      "label": "ISBN",
+      "query": "bib.isbn all \"2-07-036373-2\"",
+      "schema": "unimarcXchange",
+      "http": 200,
+      "total": 2,
+      "records": 2,
+      "diagnostics": [],
+      "first": {
+        "title": "La Promesse de l'aube",
+        "authors": [
+          "Gary Romain"
+        ],
+        "publication": [
+          "[Paris] Gallimard 1973"
+        ],
+        "dates": [
+          "1973"
+        ],
+        "identifiers": [
+          "2-07-036373-2"
+        ],
+        "subjects": [],
+        "abstract": [],
+        "physical": [
+          "370 p. couv. ill. en coul. 18 cm"
+        ],
+        "type": "bibliographic",
+        "ark": "ark:/12148/cb352246682",
+        "links": [],
+        "responsibility": [
+          "Romain Gary"
+        ]
+      },
+      "repeat606": false
+    },
+    {
+      "label": "ARK",
+      "query": "bib.persistentid any \"ark:/12148/cb38499612v\"",
+      "schema": "unimarcXchange",
+      "http": 200,
+      "total": 1,
+      "records": 1,
+      "diagnostics": [],
+      "first": {
+        "title": "Porgy & Bess",
+        "authors": [
+          "Armstrong Louis 1901-1971",
+          "Gershwin George 1898-1937",
+          "Fitzgerald Ella 1917-1996",
+          "Garcia Russell 1916-2011"
+        ],
+        "publication": [
+          "[[S.l.]] [[s.n.]] [[s.d.]]"
+        ],
+        "dates": [
+          "[[s.d.]]"
+        ],
+        "identifiers": [],
+        "subjects": [],
+        "abstract": [],
+        "physical": [
+          "1 disque compact (1 h 06 min 11 s)"
+        ],
+        "type": "bibliographic",
+        "ark": "ark:/12148/cb38499612v",
+        "links": [],
+        "responsibility": [
+          "George Gershwin, comp.  Ella Fitzgerald, chant Louis Armstrong, chant, trp Russel Garcia, dir."
+        ]
+      },
+      "repeat606": false
+    },
+    {
+      "label": "ISNI",
+      "query": "aut.isni all \"0000000121214815\"",
+      "schema": "unimarcXchange",
+      "http": 200,
+      "total": 1,
+      "records": 1,
+      "diagnostics": [],
+      "first": {
+        "title": "Ponti Claude 1948-....",
+        "authors": [],
+        "publication": [],
+        "dates": [],
+        "identifiers": [
+          "0000000121214815"
+        ],
+        "subjects": [],
+        "abstract": [],
+        "physical": [],
+        "type": "authority",
+        "ark": "ark:/12148/cb12056784q",
+        "links": [],
+        "responsibility": []
+      },
+      "repeat606": false
+    },
+    {
+      "label": "autorité Hugo",
+      "query": "aut.persistentid any \"ark:/12148/cb11907966z\"",
+      "schema": "unimarcXchange",
+      "http": 200,
+      "total": 1,
+      "records": 1,
+      "diagnostics": [],
+      "first": {
+        "title": "Hugo Victor 1802-1885",
+        "authors": [],
+        "publication": [],
+        "dates": [],
+        "identifiers": [
+          "0000000121200982"
+        ],
+        "subjects": [],
+        "abstract": [],
+        "physical": [],
+        "type": "authority",
+        "ark": "ark:/12148/cb11907966z",
+        "links": [
+          "https://www.leonore.archives-nationales.culture.gouv.fr/ui/notice/188501 http://archives.paris.fr https://www2.assemblee-nationale.fr/sycomore/fiche/(num_dept)/8795"
+        ],
+        "responsibility": []
+      },
+      "repeat606": false
+    },
+    {
+      "label": "sujet",
+      "query": "bib.subject all \"intelligence artificielle\"",
+      "schema": "unimarcXchange",
+      "http": 200,
+      "total": 9272,
+      "records": 10,
+      "diagnostics": [],
+      "first": {
+        "title": "Safe and sound artificial intelligence in hazardous applications",
+        "authors": [
+          "Fox John 1948-....",
+          "Das Subrata"
+        ],
+        "publication": [
+          "Menlo Park (Calif.) American Association for Artificial Intelligence Cambridge (Mass.) MIT Press cop. 2000"
+        ],
+        "dates": [
+          "cop. 2000"
+        ],
+        "identifiers": [
+          "0-262-06211-9"
+        ],
+        "subjects": [
+          "Intelligence artificielle en médecine"
+        ],
+        "abstract": [],
+        "physical": [
+          "XXXII-293 p. ill. 24 cm"
+        ],
+        "type": "bibliographic",
+        "ark": "ark:/12148/cb37740472b",
+        "links": [],
+        "responsibility": [
+          "John Fox, Subrata Das"
+        ]
+      },
+      "repeat606": true
+    },
+    {
+      "label": "date",
+      "query": "(bib.author all \"julien gracq\") and (bib.publicationdate >= \"2000\")",
+      "schema": "unimarcXchange",
+      "http": 200,
+      "total": 55,
+      "records": 10,
+      "diagnostics": [],
+      "first": {
+        "title": "Les préférences de Julien Gracq",
+        "authors": [
+          "Paget Jean",
+          "Daive Jean 1941-....",
+          "Gracq Julien 1910-2007",
+          "Gracq Julien 1910-2007"
+        ],
+        "publication": [
+          "Paris Radio France [Arles (Bouches-du-Rhône)] distrib. Harmonia mundi distribution [DL 2007]"
+        ],
+        "dates": [
+          "[DL 2007]"
+        ],
+        "identifiers": [],
+        "subjects": [
+          "Gracq Julien 1910-2007",
+          "enregistrement parlé",
+          "édition phonographique",
+          "document d'origine : diffusion à la radio",
+          "entretien"
+        ],
+        "abstract": [],
+        "physical": [
+          "2 disques compacts (1 h 16 min 47 s, 1 h 17 min 03 s) ADD 1 brochure"
+        ],
+        "type": "bibliographic",
+        "ark": "ark:/12148/cb411315392",
+        "links": [],
+        "responsibility": [
+          "entretiens avec Jean Paget et Jean Daive Julien Gracq, participant Julien Gracq, voix"
+        ]
+      },
+      "repeat606": false
+    },
+    {
+      "label": "aucun résultat",
+      "query": "bib.title all \"zzzzzzlaboSRUaucunresultat987654321\"",
+      "schema": "unimarcXchange",
+      "http": 200,
+      "total": 0,
+      "records": 0,
+      "diagnostics": [],
+      "repeat606": false
+    },
+    {
+      "label": "diagnostic",
+      "query": "bib.critereInexistant all \"test\"",
+      "schema": "unimarcXchange",
+      "http": 200,
+      "total": 0,
+      "records": 0,
+      "diagnostics": [
+        {
+          "uri": "info:srw/diagnostic/1/16",
+          "message": "Index non supporté",
+          "details": "bib.critereInexistant"
+        }
+      ],
+      "repeat606": false
+    },
+    {
+      "label": "tri Aut/sort.ascending",
+      "query": "bib.anywhere all \"julien gracq\" sortBy Aut/sort.ascending",
+      "schema": "unimarcXchange",
+      "http": 200,
+      "total": 435,
+      "records": 10,
+      "diagnostics": [],
+      "first": {
+        "title": "Julien Gracq et le sacré",
+        "authors": [
+          "Marot Patrick 1955-...."
+        ],
+        "publication": [
+          "Paris Lettres modernes Minard 2018",
+          "14-Condé-sur-Noireau Impr. Corlet numérique"
+        ],
+        "dates": [
+          "2018"
+        ],
+        "identifiers": [
+          "978-2-406-06733-7"
+        ],
+        "subjects": [
+          "Gracq Julien 1910-2007 Sacré"
+        ],
+        "abstract": [],
+        "physical": [
+          "1 vol. (381 p.) 22 cm"
+        ],
+        "type": "bibliographic",
+        "ark": "ark:/12148/cb454982842",
+        "links": [],
+        "responsibility": [
+          "sous la direction de Patrick Marot"
+        ]
+      },
+      "repeat606": false
+    },
+    {
+      "label": "tri Aut/sort.descending",
+      "query": "bib.anywhere all \"julien gracq\" sortBy Aut/sort.descending",
+      "schema": "unimarcXchange",
+      "http": 200,
+      "total": 435,
+      "records": 10,
+      "diagnostics": [],
+      "first": {
+        "title": "Terre glaise théâtre",
+        "authors": [
+          "Win Thierry de 1955-...."
+        ],
+        "publication": [
+          "Brest Éditions Stellamaris DL 2018"
+        ],
+        "dates": [
+          "DL 2018"
+        ],
+        "identifiers": [
+          "978-2-36868-482-5"
+        ],
+        "subjects": [],
+        "abstract": [
+          "Sans cesse nous parlons … mais que disons-nous au juste ? Sur quoi la parole fait-elle écran ? Qu'y a-t-il de l'autre côté des mots ? Des personnages, tantôt en groupe tantôt seuls, nous emmènent au coeur d'un monde crevassé, fissuré, troué. Ils tentent avec des bonheurs divers de le combler ou de le rejoindre par le jeu, le délire ou l'audace du verbe. Et si toute présence au monde était finalement semblable au travail du potier ou du sculpteur : ces artisans et artistes trempent leurs mains dans la terre et dans l'eau (comme on dirait à propos d'un crime) pour risquer l'aventure d'une forme … ? Thierry De Win Né en 1955 Père de trois garçons Professeur de français et d'arts d'expression Familier des lettres et des arts Auteur de textes dramatiques et de poésies Adore la mer et les cuberdons L'opéra, Led Zeppelin, Allain Leprest et la musique bretonne Le deuxième Moment Musical de Schubert en signe de fraternité universelle, Beckett, Michaux, Rimbaud, Jules verne et Julien Gracq Par exemple … Et bien des choses encore Pourvu qu'elles soient belles, fortes et sages quelquefois !"
+        ],
+        "physical": [
+          "1 vol. (77 p.) 21 cm"
+        ],
+        "type": "bibliographic",
+        "ark": "ark:/12148/cb45516039q",
+        "links": [],
+        "responsibility": [
+          "Thierry de Win"
+        ]
+      },
+      "repeat606": true
+    },
+    {
+      "label": "tri Tit/sort.ascending",
+      "query": "bib.anywhere all \"julien gracq\" sortBy Tit/sort.ascending",
+      "schema": "unimarcXchange",
+      "http": 200,
+      "total": 435,
+      "records": 10,
+      "diagnostics": [],
+      "first": {
+        "title": "1 fascicule (118 f.) 30 cm",
+        "authors": [
+          "Brisville Jean-Claude 1922-2014",
+          "Gracq Julien 1910-2007"
+        ],
+        "publication": [
+          "[1971]"
+        ],
+        "dates": [
+          "[1971]"
+        ],
+        "identifiers": [],
+        "subjects": [],
+        "abstract": [],
+        "physical": [
+          "1 fascicule (118 f.) 30 cm"
+        ],
+        "type": "bibliographic",
+        "ark": "ark:/12148/cb420613660",
+        "links": [],
+        "responsibility": []
+      },
+      "repeat606": true
+    },
+    {
+      "label": "tri Tit/sort.descending",
+      "query": "bib.anywhere all \"julien gracq\" sortBy Tit/sort.descending",
+      "schema": "unimarcXchange",
+      "http": 200,
+      "total": 435,
+      "records": 10,
+      "diagnostics": [],
+      "first": {
+        "title": "Zwischen Mythos und Widerstand Ernst Jüngers \"Auf den Marmorklippen\"",
+        "authors": [
+          "Bantle Thomas",
+          "Pschera Alexander 1964-....",
+          "Trawny Peter 1964-....",
+          "Ernst und Friedrich Georg Jünger Gesellschaft"
+        ],
+        "publication": [
+          "Frankfurt am Main Vittorio Klostermann",
+          "C 2019"
+        ],
+        "dates": [
+          "C 2019"
+        ],
+        "identifiers": [
+          "9783465043836",
+          "3465043839"
+        ],
+        "subjects": [
+          "Jünger Ernst 1895-1998"
+        ],
+        "abstract": [],
+        "physical": [
+          "215 pages some color illustrations 23 cm"
+        ],
+        "type": "bibliographic",
+        "ark": "ark:/12148/cb46593598p",
+        "links": [],
+        "responsibility": [
+          "herausgegeben von Thomas Bantle, Alexander Pschera und Peter Trawny Ernst und Friedrich Georg Jünger Gesellschaft e.V"
+        ]
+      },
+      "repeat606": false
+    },
+    {
+      "label": "tri Dat/sort.ascending",
+      "query": "bib.anywhere all \"julien gracq\" sortBy Dat/sort.ascending",
+      "schema": "unimarcXchange",
+      "http": 200,
+      "total": 435,
+      "records": 10,
+      "diagnostics": [],
+      "first": {
+        "title": "La Riva delle Sirti. Opera in un prologo e 3 atti di Renato Prinzhofer. Dal romanzo omonimo di Julien Gracq... Musica di Luciano Chailly. [Op. 238]",
+        "authors": [
+          "Prinzhofer Renato",
+          "Gracq Julien",
+          "Chailly Luciano"
+        ],
+        "publication": [
+          "Firenze Forlivesi [s.d.]"
+        ],
+        "dates": [
+          "[s.d.]"
+        ],
+        "identifiers": [],
+        "subjects": [],
+        "abstract": [],
+        "physical": [
+          "In-16, 43 p."
+        ],
+        "type": "bibliographic",
+        "ark": "ark:/12148/cb44001563j",
+        "links": [],
+        "responsibility": []
+      },
+      "repeat606": false
+    },
+    {
+      "label": "tri Dat/sort.descending",
+      "query": "bib.anywhere all \"julien gracq\" sortBy Dat/sort.descending",
+      "schema": "unimarcXchange",
+      "http": 200,
+      "total": 435,
+      "records": 10,
+      "diagnostics": [],
+      "first": {
+        "title": "Le goût de la géographie",
+        "authors": [
+          "Gavory Antoine Éditeur scientifique"
+        ],
+        "publication": [
+          "Paris Mercure de France 2026",
+          "58- Impr. Imprimerie Laballery"
+        ],
+        "dates": [
+          "2026"
+        ],
+        "identifiers": [
+          "978-2-7152-6710-7"
+        ],
+        "subjects": [],
+        "abstract": [
+          "Le goût de la géographie naît d une curiosité naturelle : comprendre le monde et comprendre l humanité. « Écrire la Terre », telle est son étymologie. Étudier la géographie, c est observer les cartes, mais aussi les paysages, les villes, les climats, les cultures et les sociétés. C  est apprendre comment l individu s adapte à son environnement et comment l environnement, à son tour, influence son mode de vie. Pour les écrivains, les lignes d une carte évoquent les courbes d une montagne ou des voyages possibles. La géographie raconte que chaque lieu a une histoire, une voix, un visage. Source d inspiration pour les romanciers, elle devient sentimentale et humaine. Balade en compagnie de Claude Ptolémée, Alexander Von Humboldt, Jules Michelet, Isabelle Eberhardt, Aldous Huxley, Thea von Harbou, Honoré de Balzac, Gustave Flaubert, Paul Morand, Joseph Conrad, Nicolas Bouvier, Henry de Monfreid, Sylvain Tesson, Gilles Lapouge, Yves Lacoste, Julien Gracq et bien d autres..."
+        ],
+        "physical": [
+          "1 volume 114 p 16 cm"
+        ],
+        "type": "bibliographic",
+        "ark": "ark:/12148/cb487858434",
+        "links": [],
+        "responsibility": []
+      },
+      "repeat606": true
+    },
+    {
+      "label": "dublin core",
+      "query": "bib.anywhere all \"julien gracq\"",
+      "schema": "dublincore",
+      "http": 200,
+      "total": 435,
+      "records": 10,
+      "diagnostics": [],
+      "first": {
+        "title": "[Julien Gracq] / Arturo Patten",
+        "authors": [
+          "Patten, Arturo (1939-1999). Photographe"
+        ],
+        "publication": [
+          "[Arturo Patten] (Paris)"
+        ],
+        "dates": [
+          "1990"
+        ],
+        "identifiers": [
+          "http://catalogue.bnf.fr/ark:/12148/cb38493463r"
+        ],
+        "subjects": [
+          "Gracq, Julien (1910-....) -- Portraits"
+        ],
+        "abstract": [
+          "Comprend : St-Florent-le-Vieil, France, 1990, Julien Gracq. ; St-Florent-le-Vieil, France, 1990, Julien Gracq. ; St-Florent-le-Vieil, France, 1990, Julien Gracq. ; St-Florent-le-Vieil, France, 1990, Julien Gracq. ; St-Florent-le-Vieil, France, 1990, Julien Gracq. ; St-Florent-le-Vieil, France, 1990, Julien Gracq. ; St-Florent-le-Vieil, France, 1990, Julien Gracq."
+        ],
+        "physical": [
+          "7 photogr. pos. : n. et b. ; 18 x 24 cm"
+        ],
+        "type": "image fixe · still image",
+        "ark": "http://catalogue.bnf.fr/ark:/12148/cb38493463r",
+        "links": []
+      },
+      "repeat606": false
+    },
+    {
+      "label": "intermarc",
+      "query": "bib.anywhere all \"julien gracq\"",
+      "schema": "intermarcXchange",
+      "http": 200,
+      "total": 435,
+      "records": 10,
+      "diagnostics": [],
+      "first": {
+        "title": "Notice Intermarc · ark:/12148/cb38493463r",
+        "authors": [],
+        "publication": [],
+        "dates": [],
+        "identifiers": [],
+        "subjects": [],
+        "abstract": [],
+        "physical": [],
+        "type": "bibliographic",
+        "ark": "ark:/12148/cb38493463r",
+        "links": []
+      },
+      "repeat606": false
+    },
+    {
+      "label": "UNIMARC analytiques",
+      "query": "bib.persistentid any \"ark:/12148/cb38499612v\"",
+      "schema": "unimarcXchange-anl",
+      "http": 200,
+      "total": 1,
+      "records": 1,
+      "diagnostics": [],
+      "first": {
+        "title": "Porgy & Bess",
+        "authors": [
+          "Armstrong Louis 1901-1971",
+          "Gershwin George 1898-1937",
+          "Fitzgerald Ella 1917-1996",
+          "Garcia Russell 1916-2011"
+        ],
+        "publication": [
+          "[[S.l.]] [[s.n.]] [[s.d.]]"
+        ],
+        "dates": [
+          "[[s.d.]]"
+        ],
+        "identifiers": [],
+        "subjects": [],
+        "abstract": [],
+        "physical": [
+          "1 disque compact (1 h 06 min 11 s)"
+        ],
+        "type": "bibliographic",
+        "ark": "ark:/12148/cb38499612v",
+        "links": [],
+        "responsibility": [
+          "George Gershwin, comp.  Ella Fitzgerald, chant Louis Armstrong, chant, trp Russel Garcia, dir."
+        ]
+      },
+      "repeat606": false
+    },
+    {
+      "label": "Intermarc analytiques",
+      "query": "bib.persistentid any \"ark:/12148/cb38499612v\"",
+      "schema": "intermarcXchange-anl",
+      "http": 200,
+      "total": 1,
+      "records": 1,
+      "diagnostics": [],
+      "first": {
+        "title": "Notice Intermarc · ark:/12148/cb38499612v",
+        "authors": [],
+        "publication": [],
+        "dates": [],
+        "identifiers": [],
+        "subjects": [],
+        "abstract": [],
+        "physical": [],
+        "type": "bibliographic",
+        "ark": "ark:/12148/cb38499612v",
+        "links": []
+      },
+      "repeat606": false
+    }
+  ],
+  "network": {
+    "results": [
+      {
+        "origin": "http://127.0.0.1:8876/",
+        "status": 200,
+        "length": 5465,
+        "total": "435"
+      },
+      {
+        "origin": "file:///labo-sru-bnf.html",
+        "status": 200,
+        "length": 5465,
+        "total": "435"
+      },
+      {
+        "origin": "https://api.bnf.fr/fr/api-sru-catalogue-general",
+        "status": 200,
+        "length": 5465,
+        "total": "435"
+      }
+    ],
+    "cors": "Access-Control-Allow-Origin: *",
+    "variants": [
+      {
+        "query": "(bib.author all \"romain gary\") and (bib.title all \"la promesse de l'aube\")",
+        "status": 200,
+        "total": "21",
+        "diagnostics": []
+      },
+      {
+        "query": "(bib.author all \"romain gary\") and (bib.title all \"la promesse de l aube\")",
+        "status": 200,
+        "total": "21",
+        "diagnostics": []
+      },
+      {
+        "query": "(bib.author all \"romain gary\") and (bib.title all \"la promesse\")",
+        "status": 200,
+        "total": "21",
+        "diagnostics": []
+      },
+      {
+        "query": "bib.title all \"la promesse de l'aube\"",
+        "status": 200,
+        "total": "43",
+        "diagnostics": []
+      }
+    ]
+  },
+  "errors": [],
+  "limitations": [
+    "BnF diagnostic 131 / -20: Romain Gary, UNIMARC, maximumRecords=10. Successful response with maximumRecords=1 and no explicit recordSchema.",
+    "Partial accessibility checks; not an RGAA audit.",
+    "Browser tested: Chromium."
+  ]
+}
